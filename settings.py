@@ -5,8 +5,11 @@ class Settings:
         self.screen_width = 600
         self.screen_height = 400
         self.bg_color = (233, 233, 233)     #(120, 81, 169) is a shade of purple.
-        self.caption = "Alien Invasion 🎮"
+        self.caption = "Alien Invasion 🎮🚀👽"
         self.ship_speed = 1.5
+        self.alien_speed = 1.0
+        self.fleet_drop_speed = 10
+        self.fleet_direction = 1                #1 represents right, -1 represents left.
         
         #Bullet settings
         self.bullet_speed = 2.0
