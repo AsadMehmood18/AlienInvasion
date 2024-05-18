@@ -1,7 +1,6 @@
 
 # Alien Invasion
 
-![Alien Invasion](https://example.com/alien-invasion-banner.png)
 
 ## Table of Contents
 1. [Introduction](#introduction)
