@@ -24,3 +24,7 @@ class Ship:
     
     def blitme(self):                                   # Draw the ship at its current location.
         self.screen.blit(self.image, self.rect)         # Draw the ship at the position specified by self.rect.
+        
+    def center_ship(self):
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
