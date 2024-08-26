@@ -78,6 +78,7 @@ class AlienInvasion:
             self.bullets.empty()
             # Create a new fleet and center the ship.
             self._create_fleet()
+            self.settings.initialize_dynamic_settings()
             self.ship.center_ship()
             # Hide the mouse cursor.
             pygame.mouse.set_visible(False)
@@ -99,7 +100,8 @@ class AlienInvasion:
             self.bullets, self.aliens, True, True)
         if not self.aliens:
             self.bullets.empty()
-            self._create_fleet()    
+            self._create_fleet()
+            self.settings.increase_speed()    
     
     def _update_aliens(self):
         self._check_fleet_edges()
