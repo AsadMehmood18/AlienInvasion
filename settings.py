@@ -1,14 +1,14 @@
-
+import pygame
 
 class Settings:
     def __init__(self):
-        self.screen_width = 800
-        self.screen_height = 600
-        self.bg_color = (233, 233, 233)     #(120, 81, 169) is a shade of purple.
+        self.screen_width = 960
+        self.screen_height = 540
+        self.bg = pygame.image.load('Images/space.bmp')
         self.caption = "Alien Invasion 🎮🚀👽"
         
         #Ship settings
-        self.ship_limit = 3
+        self.ship_limit = 2
         
         #Bullet settings
         self.bullet_width = 3
