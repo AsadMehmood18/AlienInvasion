@@ -2,8 +2,8 @@
 
 class Settings:
     def __init__(self):
-        self.screen_width = 600
-        self.screen_height = 400
+        self.screen_width = 800
+        self.screen_height = 600
         self.bg_color = (233, 233, 233)     #(120, 81, 169) is a shade of purple.
         self.caption = "Alien Invasion 🎮🚀👽"
         
@@ -19,8 +19,14 @@ class Settings:
         #Alien settings
         self.fleet_drop_speed = 10
         
+        #Score settings
+        self.alien_points = 50
+        
         #How quickly the game speeds up
-        self.speedup_scale = 1.5
+        self.speedup_scale = 1.2
+        
+        #How quickly the alien point values increase
+        self.score_scale = 1.5
         
         self.initialize_dynamic_settings()
         
@@ -36,3 +42,6 @@ class Settings:
         self.ship_speed *= self.speedup_scale
         self.bullet_speed *= self.speedup_scale
         self.alien_speed *= self.speedup_scale
+        
+        self.alien_points = int(self.alien_points * self.score_scale) 
+        
